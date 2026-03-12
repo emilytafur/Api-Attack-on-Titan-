@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle del Titán</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <header>
+    <img src="img/Attack.png" alt="Logo Attack on Titan" class="logo" />
+    <p class="subtitulo">Detalle del Titán</p>
+  </header>
+
+
+  <div class="detalle-wrapper">
+
+    <a class="btn-volver" href="index.html">← Volver a la lista</a>
+
+    <div id="contenedor-detalle">
+      <p class="cargando">Cargando titán...</p>
+    </div>
+
+  </div>
+
+  <template id="template-detalle">
+    <div class="detalle-card">
+      <img class="detalle-img" src="" alt="" />
+      <div class="detalle-info">
+        <div class="detalle-id"></div>
+        <h2 class="detalle-nombre"></h2>
+        <p class="titan-detalle">ALTURA: <span class="detalle-altura"></span></p>
+        <p class="titan-detalle">ALIANZA: <span class="detalle-alianza"></span></p>
+        <p class="titan-detalle">HEREDERO ACTUAL: <span class="detalle-heredero-actual"></span></p>
+        <p class="titan-detalle">HEREDEROS ANTERIORES: <span class="detalle-herederos-pasados"></span></p>
+        <div class="detalle-habilidades">
+          <h4>HABILIDADES</h4>
+          <ul class="detalle-lista-habilidades"></ul>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <p>Datos obtenidos de <strong>attackontitanapi.com</strong></p>
+  </footer>
+
+  <script src="detalle.js"></script>
+</body>
+</html>
